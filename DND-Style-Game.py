@@ -1,0 +1,10 @@
+import time
+NameVERI = ("no")
+while NameVERI == ("no"):
+    Name = input("what is your name?")
+    time.sleep(1)
+    print(Name)
+    NameVERI = input(Are you sure? ("yes or no")
+def ...(
+    time.sleep(1)
+    print(".")
