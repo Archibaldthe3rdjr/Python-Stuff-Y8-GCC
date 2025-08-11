@@ -23,20 +23,29 @@ while NameVERI == "no":
     NameVERI = input("Are you sure? (yes or no)")
 
 Dot()
-slow_type("You awake to your alarm clock beeping", 0.10)
+slow_type("You awake to your alarm clock beeping")
 time.sleep(.5)
 print("\n")
-slow_type("morning "+Name+" its time for breakfast!", 0.07)
+slow_type("morning "+Name+" its time for breakfast!")
 time.sleep(.5)
 print("\n")
-slow_type("You roll out of you bed to see your filthy room", 0.10)
+slow_type("You roll out of your bed to see your filthy room")
 time.sleep(1)
 print("\n")
+
 slow_type("What do you wish to do?")
-Choice1 = input(slow_type("1.Leave Your Room\n 2.Clean Your Room\n 3.Call Out to Mum", 0.10))
+Choice1 = input(slow_type("1.Leave Your Room\n2.Clean Your Room\n3.Call Out to Mum"))
 
 if Choice1 == "1":
-    print("You choice was 1")
+    slow_type("\n\nYou left your room")
+    
+    slow_type("Where do you go now?")
+    Choice2 = input(slow_type("1. Walk to kitchen\n2. Go to lounge room"))
+    if Choice2 == "1":
+        slow_type("\nYou enter the kitchen to see your mother cooking pancakes")
+    
+    if Choice2 == "2":
+        slow_type("You see your younger brother up watching cocomelon on the TV")
 
 if Choice1 == "2":
     print("You choice was 2")
