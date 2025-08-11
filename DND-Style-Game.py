@@ -1,6 +1,8 @@
 import time
 import sys
 NameVERI = "no"
+Choice2="2"
+
 def Dot():
     time.sleep(1)
     print(".")
@@ -19,8 +21,8 @@ def slow_type(text, delay=0.1):
 while NameVERI == "no":
     Name = input("what is your name?")
     time.sleep(1)
-    print(Name)
-    NameVERI = input("Are you sure? (yes or no)")
+    print("\n"+Name)
+    NameVERI = input("\nAre you sure? (yes or no)")
 
 Dot()
 slow_type("You awake to your alarm clock beeping")
@@ -39,13 +41,15 @@ Choice1 = input(slow_type("1.Leave Your Room\n2.Clean Your Room\n3.Call Out to M
 if Choice1 == "1":
     slow_type("\n\nYou left your room")
     
-    slow_type("Where do you go now?")
-    Choice2 = input(slow_type("1. Walk to kitchen\n2. Go to lounge room"))
-    if Choice2 == "1":
-        slow_type("\nYou enter the kitchen to see your mother cooking pancakes")
+    while Choice2 == "2":
+        slow_type("Where do you go now?")
+        Choice2 = input(slow_type("1. Walk to kitchen\n2. Walk to lounge room"))
+        if Choice2 == "2":
+            slow_type("You see your younger brother up watching cocomelon on the TV\n")
+            slow_type("you exit the lounge room")
     
-    if Choice2 == "2":
-        slow_type("You see your younger brother up watching cocomelon on the TV")
+    slow_type("You see your mum making pancakes as you enter the kitchen")
+
 
 if Choice1 == "2":
     print("You choice was 2")
