@@ -36,10 +36,10 @@ slow_type("What do you wish to do?")
 Choice1 = input(slow_type("1.Leave Your Room\n 2.Clean Your Room\n 3.Call Out to Mum", 0.10))
 
 if Choice1 == "1":
-    print("You chose 1")
+    print("You choice was 1")
 
 if Choice1 == "2":
-    print("You chose 2")
+    print("You choice was 2")
 
 if Choice1 == "3":
-    print("You chose 3")
+    print("You choice was 3")
